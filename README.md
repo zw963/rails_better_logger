@@ -29,20 +29,20 @@ Add to your project Gemfile
 
 1. Highlight any request and controller action, with params.
 
-![File](https://zw963.github.io/rails_better_logger1.png)
+![File](rails_better_logger1.png)
 
 2. Highlight `UPDATE/INSERT/DELETE` SQL query.
 
-![File](https://zw963.github.io/rails_better_logger2.png)
+![File](rails_better_logger2.png)
 
 3. SQL query positional parameter always been print to a new line. 
    (make query and data seperate, more clearly)
    
-![File](https://zw963.github.io/rails_better_logger3.png)
+![File](rails_better_logger3.png)
 
 4. Highlight slow rendered views. (great than 99 ms)
    
-![File](https://zw963.github.io/rails_better_logger4.png)
+![File](rails_better_logger4.png)
 
 ## Support
 

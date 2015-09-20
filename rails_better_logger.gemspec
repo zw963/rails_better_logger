@@ -16,6 +16,7 @@ Gem::Specification.new do |s|
   s.license                     = 'MIT'
   s.require_paths               = ['lib']
   s.files                       = `git ls-files bin lib *.md LICENSE`.split("\n")
+  s.files                       -= ['rails_better_logger1.png', 'rails_better_logger2.png', "rails_better_logger3.png", "rails_better_logger4.png"]
   s.executables                 = `git ls-files -- bin/*`.split("\n").map {|f| File.basename(f) }
 
   s.add_runtime_dependency 'active_support'
