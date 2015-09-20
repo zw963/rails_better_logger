@@ -11,9 +11,8 @@ ActiveSupport.on_load(:after_initialize) do |_app|
       def info(progname=nil, &block)
         log = block_given? ? block.call : progname
 
-        better_log = content
+        better_log = log
                      .sub(/([0-9]{3,})(.[0-9])?ms/, '[0m[31m\1\2ms[0m')
-                     .sub(/[\w:]+Error/, '[0m[41m\1\2ms[0m')
 
         if block_given?
           super(progname) { better_log }
@@ -30,9 +29,8 @@ ActiveSupport.on_load(:after_initialize) do |_app|
         http_verb = Regexp.union(%w[GET POST PUT PATCH DELETE])
         log = block_given? ? block.call : progname
 
-        better_log = content
+        better_log = log
                      .sub(/(#{http_verb} ".+")/, '[0m[32m\1[0m')
-                     .sub(/[\w:]+Error/, '[0m[41m\1\2ms[0m')
 
         if block_given?
           super(progname) { better_log }
@@ -48,10 +46,9 @@ ActiveSupport.on_load(:after_initialize) do |_app|
       def info(progname=nil, &block)
         log = block_given? ? block.call : progname
 
-        better_log = content
+        better_log = log
                      .sub(/{(.+)}/, '[0m[33m{\1}[0m')
                      .sub(/Processing by ([\w#]+) as ([A-Z]+)/, 'Processing by [0m[32m\1[0m as [0m[30m\2[0m')
-                     .sub(/[\w:]+Error/, '[0m[41m\1\2ms[0m')
 
         if block_given?
           super(progname) { better_log }
@@ -69,9 +66,8 @@ ActiveSupport.on_load(:after_initialize) do |_app|
         sql_verb = Regexp.union(%w[UPDATE INSERT DELETE])
         log = block_given? ? block.call : progname
 
-        better_log = content
+        better_log = log
                      .sub(/(ms\).+)(#{sql_verb}.+)(\[\[(.+)\]\])/m, "\\1[0m[36m\\2[0m\n\\3")
-                     .sub(/[\w:]+Error/, '[0m[41m\1\2ms[0m')
 
         if block_given?
           super(progname) { better_log }
