@@ -18,6 +18,6 @@ Gem::Specification.new do |s|
   s.files                       = `git ls-files bin lib *.md LICENSE`.split("\n")
   s.executables                 = `git ls-files -- bin/*`.split("\n").map {|f| File.basename(f) }
 
-  s.add_runtime_dependency '', ''
+  s.add_runtime_dependency 'active_support'
   s.add_development_dependency 'ritual', '~>0.4'
 end
