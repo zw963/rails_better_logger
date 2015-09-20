@@ -35,7 +35,7 @@ Add to your project Gemfile
 
 ![File](rails_better_logger2.png)
 
-3. SQL query positional parameter always been print to a new line. 
+3. SQL query positional parameter always be print to a new line.
    (make query and data seperate, more clearly)
    
 ![File](rails_better_logger3.png)
