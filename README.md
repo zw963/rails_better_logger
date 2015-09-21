@@ -1,6 +1,6 @@
 # RailsBetterLogger [![Build Status](https://travis-ci.org/zw963/rails_better_logger.svg?branch=master)](https://travis-ci.org/zw963/rails_better_logger) [![Gem Version](https://badge.fury.io/rb/rails_better_logger.svg)](http://badge.fury.io/rb/rails_better_logger)
 
-It just original rails logger, you don't miss anything, just better.
+It just canonical rails logger, you don't miss anything, just better!
 
 ## Getting Started
 
@@ -29,20 +29,20 @@ Add to your project Gemfile
 
 1. Highlight any request and controller action, with params.
 
-![File](rails_better_logger1.png)
+![File](images/rails_better_logger1.png)
 
 2. Highlight `UPDATE/INSERT/DELETE` SQL query.
 
-![File](rails_better_logger2.png)
+![File](images/rails_better_logger2.png)
 
 3. SQL query positional parameter always be print to a new line.
    (make query and data seperate, more clearly)
    
-![File](rails_better_logger3.png)
+![File](images/rails_better_logger3.png)
 
 4. Highlight slow rendered views. (great than 99 ms)
    
-![File](rails_better_logger4.png)
+![File](images/rails_better_logger4.png)
 
 ## Support
 
