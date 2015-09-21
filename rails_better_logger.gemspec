@@ -10,13 +10,13 @@ Gem::Specification.new do |s|
   s.required_ruby_version       = '>= 1.9.1'
   s.authors                     = ['Billy.Zheng(zw963)']
   s.email                       = ['zw963@163.com']
-  s.summary                     = 'short summary (Required)'
+  s.summary                     = "Just is the canonical rails logger, you don't miss anything, just better!"
   s.description                 = ''
   s.homepage                    = 'http://github.com/zw963/rails_better_logger'
   s.license                     = 'MIT'
   s.require_paths               = ['lib']
   s.files                       = `git ls-files bin lib *.md LICENSE`.split("\n")
-  s.files                       -= ['rails_better_logger1.png', 'rails_better_logger2.png', "rails_better_logger3.png", "rails_better_logger4.png"]
+  s.files                       -= Dir['images/*.png']
   s.executables                 = `git ls-files -- bin/*`.split("\n").map {|f| File.basename(f) }
 
   s.add_runtime_dependency 'activesupport', '> 3.0'
