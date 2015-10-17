@@ -46,7 +46,7 @@ Add to your project Gemfile
 
 ## Support
 
-  * Rails 4+, should support Rails 3 too, issues welcome.
+  * Rails 4+, issues welcome.
 
 ## Advise
   * Any advise is welcome, just make this gem better.

@@ -19,6 +19,6 @@ Gem::Specification.new do |s|
   s.files                       -= Dir['images/*.png']
   s.executables                 = `git ls-files -- bin/*`.split("\n").map {|f| File.basename(f) }
 
-  s.add_runtime_dependency 'activesupport', '> 3.0'
-  s.add_development_dependency 'ritual', '~>0.4'
+  s.add_runtime_dependency 'activesupport', '~> 4.0'
+  s.add_development_dependency 'ritual', '~> 0.4'
 end
